@@ -1,5 +1,6 @@
 # bitVolSurfacePublic
-BIT Coin Volatility Surface Construction For Share
+BIT Coin Volatility Surface Construction For Share\
+This project construct BitCoin(BTC) volatility surface with SABR model as the smoothing function using option data from Deribit.com BTC option exchange (www.deribit.com)
 
 QLib.py: Quant model library \
   generateBV(): generate bitcoin volatility object (BV) \
