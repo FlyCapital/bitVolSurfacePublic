@@ -8,17 +8,17 @@ from pymysql import connect, err, sys, cursors
 def connect_db(local=False):
 
     if local==True:
-        conn_db = connect(host='localhost',
-                          user='root',
-                          passwd='FN891124mysql',
-                          db='tradingdb')
+        conn_db = connect(host='root',
+                          user='localdbusername',
+                          passwd='dbpwd',
+                          db='dbname')
 
     else:
 
-        conn_db = connect(host='mysqlaws.cwdlc79zzkjv.us-east-2.rds.amazonaws.com',
-                          user='mysqlaws',
-                          passwd='FN891124mysqlaws',
-                          db='tradingdb')
+        conn_db = connect(host='dburl',
+                          user='dbusername',
+                          passwd='dbpwd',
+                          db='dbname')
         
     return conn_db
 

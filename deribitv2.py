@@ -14,12 +14,7 @@ from bitVolUtil import *
 from websocket import create_connection
 
 account_credential={
-    'main':('5HWH3gAJBMFpG','FYILGBX2FA26YJTQXQD6CPFUAYZ6G2HS'),
-    'acct1':('5Ns8245Lo3vqY','CEFRECKCCOMNNT3D4HUM3VIAQ3AVCIJZ'),
-    'acct2':('5P3whDrt7ugJM','U5AEB2D2AYLVEGROKOWOYCDMH3Z6XEI4'),
-    'acct3':('5P4B3oPU75NiN','M6HIHASJSY3N4HRACC5XKJYLN2K2RIZV'),
-    'acct4':('5P4QQNv46F58P','HYIH2VWQGB25NSPKHXYL7UVZSOPNULY4'),
-    'acct5':('5P4dkxSe5QmYQ','SRUDDUDCTQ6OKNBL7QS3EQX7TJEEMY7B'),
+    'main':('client_id','client_secret'),
 }
 
 #public API

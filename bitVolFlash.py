@@ -2,24 +2,9 @@ import time
 import uuid
 import datetime
 from deribitv2 import *
+from Util import *
 from pymysql import connect, err, sys, cursors
 
-def connect_db(local=False):
-
-    if local==True:
-        conn_db = connect(host='localhost',
-                          user='root',
-                          passwd='FN891124mysql',
-                          db='tradingdb')
-
-    else:
-
-        conn_db = connect(host='mysqlaws.cwdlc79zzkjv.us-east-2.rds.amazonaws.com',
-                          user='mysqlaws',
-                          passwd='FN891124mysqlaws',
-                          db='tradingdb')
-
-    return conn_db
 
 def pxConvt(px):
     if isinstance(px,str) or px==None:
